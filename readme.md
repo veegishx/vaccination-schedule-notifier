@@ -6,7 +6,7 @@ Welkin Mauritius is one of the vaccination centers available across Mauritius. T
 
 Unfortunately they do not provide a way of automatically notifying people whenever appointments are available for booking. If you are a busy person and want to know when you can book an appointment, you are probably out of luck. They only way to know is to frequently visit their site.
 
-This is a basic pupeteer script which monitors Welkin Mauritius vaccination scheduling website for specific vaccination appointments available in a specific vaccination center.
+This is a basic pupeteer script which monitors Welkin Mauritius vaccination scheduling website for specific vaccination appointments available in specific vaccination centers.
 
 
 ## ✨ Features
