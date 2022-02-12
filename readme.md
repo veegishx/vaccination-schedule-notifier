@@ -14,3 +14,6 @@ This is a basic pupeteer script which monitors Welkin Mauritius vaccination sche
 - Detect active vaccination schedules for a specific vaccine
 - Detect active vaccination schedules available in a specific region
 - Send an SMS via Twilio to notify of available vaccines
+
+## 🚨 Requirement
+- A Twilio account to send messages when active schedules are found
