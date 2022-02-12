@@ -24,3 +24,7 @@ This is a basic pupeteer script which monitors Welkin Mauritius vaccination sche
 
 
 By default the script runs every 300000 miliseconds (5 minutes)
+
+## Example of notification
+
+![screenshot](https://raw.githubusercontent.com/veegishx/vaccination-schedule-notifier/main/screenshot.png)
