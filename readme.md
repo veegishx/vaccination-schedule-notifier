@@ -17,3 +17,10 @@ This is a basic pupeteer script which monitors Welkin Mauritius vaccination sche
 
 ## 🚨 Requirement
 - A Twilio account to send messages when active schedules are found
+
+## 🔨 Instructions
+- Rename `.env.local` to `.env` and fill in the relevant details
+- Update `nameOfVaccine` and `vaccinationCenterRegion` in `index.js` to specify the vaccine and region you want to monitor
+
+
+By default the script runs every 300000 miliseconds (5 minutes)
