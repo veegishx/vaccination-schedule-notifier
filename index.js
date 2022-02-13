@@ -9,16 +9,20 @@ const authToken = process.env.TWILIO_AUTH_TOKEN || '';
 const client = require('twilio')(accountSid, authToken);
 
 // Vaccines & vaccination center regions to monitor
-const nameOfVaccine = "Moderna";
+const nameOfVaccine = "Pfizer";
 const vaccinationCenterRegion = "Moka";
+const raspberryPi = false;
 
-const MonitorVaccines = (regionName, vaccineName) => {
+const MonitorVaccines = (regionName, vaccineName, raspberryPi) => {
   return new Promise(async (resolve, reject) => {
     try {
+      if (raspberryPi) {
 
-      const browser = await puppeteer.launch({
+      }
+      let browser = await puppeteer.launch({
         headless: false,
         devtools: false,
+        executablePath: raspberryPi ? '/usr/bin/chromium-browser' : undefined,
         args: ['--no-sandbox', '--incognito']
       });
 
@@ -125,5 +129,6 @@ const MonitorVaccines = (regionName, vaccineName) => {
 
 // Monitor for active schedules every ${x} intervals
 setInterval(() => {
-  MonitorVaccines(vaccinationCenterRegion, nameOfVaccine).catch(console.error);  
+  MonitorVaccines(vaccinationCenterRegion, nameOfVaccine, raspberryPi).catch(console.error);   
 }, 300000)
+ 
