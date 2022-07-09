@@ -16,9 +16,6 @@ const raspberryPi = false;
 const MonitorVaccines = (regionName, vaccineName, raspberryPi) => {
   return new Promise(async (resolve, reject) => {
     try {
-      if (raspberryPi) {
-
-      }
       let browser = await puppeteer.launch({
         headless: false,
         devtools: false,
